@@ -29,6 +29,8 @@ import { HeaderComponent } from './share/header/header.component';
 import { SideBarComponent } from './share/side-bar/side-bar.component';
 import { MobxAngularModule } from 'mobx-angular';
 import { DeleteComponent } from './components/delete/delete.component';
+import { AddProductComponent } from './dialog/add-product/add-product.component';
+import { UploadCoverComponent } from './dialog/upload-cover/upload-cover.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { DeleteComponent } from './components/delete/delete.component';
     AddCategoryComponent,
     HeaderComponent,
     SideBarComponent,
-    DeleteComponent
+    DeleteComponent,
+    AddProductComponent,
+    UploadCoverComponent
   ],
   entryComponents:[
     APP_DIALOG

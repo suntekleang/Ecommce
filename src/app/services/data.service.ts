@@ -10,4 +10,9 @@ export class DataService {
   categoryRef(){
     return this.db.collection("category");
   }
+
+  productRef(){
+    return this.db.collection("products");
+  }
+
 }

@@ -31,6 +31,10 @@ import { MobxAngularModule } from 'mobx-angular';
 import { DeleteComponent } from './components/delete/delete.component';
 import { AddProductComponent } from './dialog/add-product/add-product.component';
 import { UploadCoverComponent } from './dialog/upload-cover/upload-cover.component';
+import { LayoutComponent } from './share/layout/layout.component';
+import { AppSideBarComponent } from './share/app-side-bar/app-side-bar.component';
+import { ShoppingCategoryComponent } from './pages/shopping-category/shopping-category.component';
+import { ShoppingProductComponent } from './components/shopping-product/shopping-product.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ import { UploadCoverComponent } from './dialog/upload-cover/upload-cover.compone
     SideBarComponent,
     DeleteComponent,
     AddProductComponent,
-    UploadCoverComponent
+    UploadCoverComponent,
+    LayoutComponent,
+    AppSideBarComponent,
+    ShoppingCategoryComponent,
+    ShoppingProductComponent
   ],
   entryComponents:[
     APP_DIALOG

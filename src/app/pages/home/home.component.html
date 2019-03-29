@@ -1,1 +1,9 @@
-<h1>Welcome to Store {{user?.user?.email}}</h1>
+<div class="card-lists">
+    <app-shopping-product *ngFor="let item of store.data"
+    [fileUrl]="item.fileUrl"
+    [name]="item.name"
+    [price]="item.price"
+    currency="R"
+    addToCart="Add to Cart"
+    ></app-shopping-product>
+</div>

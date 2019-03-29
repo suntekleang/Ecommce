@@ -1,0 +1,16 @@
+<ng-container *mobxAutorun>
+  <h4>{{ store?.selectedCategory?.name }}</h4>
+  <ng-container *ngIf="!store?.loading">
+    <div *ngIf="!store.empty">
+        <app-shopping-product *ngFor="let item of store.data"
+          [fileUrl]="item.fileUrl"
+          [name]="item.name"
+          [price]="item.price"
+          currency="R"
+          addToCart="Add to Cart"
+          ></app-shopping-product>
+    </div>
+    <div *ngIf="store?.empty">No Product</div>
+  </ng-container>
+  <div *ngIf="store?.loading">Loading</div>
+</ng-container>

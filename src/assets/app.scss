@@ -1,0 +1,56 @@
+.container{
+    margin: 0 auto;
+    display: flex;
+    width: 980px;
+    margin-top: 56px;
+    position: relative;
+    .main-contain{
+        display: flex;
+        flex: 1;
+        padding-left: 280px;
+    }
+    .card-lists{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card{
+        border: solid 1px #ddd;
+        width: 300px;
+        margin-bottom: 24px;
+        margin-left: 24px;
+        .product-avatar{
+            background-color: #333;
+            width: 100%;
+            height: 200px;
+            background-position: center;
+        }
+        .nameprice{
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .app-side-bar{
+        width: 230px;
+        background-color: #333;
+        color: #fff;
+        padding: 12px;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        .mat-category{
+            &.mat-list-base .mat-list-item{
+                color: rgba($color:#fff, $alpha: .78);
+                cursor: pointer;
+                &.active{
+                    color: #6bf;
+                }
+                &:hover{
+                    color: #6bf;
+                }
+            }
+        }
+    }
+}

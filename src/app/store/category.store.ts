@@ -28,7 +28,6 @@ export class Category {
       this.data=docs;
       this.empty=docs.length===0;
       this.loading=false;
-      console.log(this.empty);
     })
   }
   @action

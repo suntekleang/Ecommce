@@ -11,7 +11,16 @@ export class DataService {
     return this.db.collection("category");
   }
 
-  productRef(){
+  productef(){
+    return this.db.collection("products");
+  }
+  productRef(categoryKey?){
+    if(categoryKey){
+      return this.db.collection("products",ref=>ref
+      .where("category.key","==",categoryKey)
+      .orderBy("name")
+      )
+    }
     return this.db.collection("products");
   }
 
